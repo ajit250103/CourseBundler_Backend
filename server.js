@@ -5,6 +5,11 @@ import RazorPay from "razorpay";
 import nodeCron from "node-cron";
 import { Stats } from "./models/Stats.js";
 
+import dotenv from "dotenv";
+
+// Load environment variables
+dotenv.config();
+
 connectDB();
 
 cloudinary.v2.config({
